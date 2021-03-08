@@ -1,6 +1,7 @@
 .advantages
     min-height: 470px
     background-color: #f6f6f6
+    padding: 69px 0 81px 0
     &__wrapper
         display: flex
         flex-direction: column
@@ -11,11 +12,13 @@
         margin-top: 65px
         flex-direction: row
         justify-content: space-between
+        align-items: flex-start
     &__element
-        width: 245px
+        width: 275px
         display: flex
         flex-direction: column
         align-items: center
+        margin: 0 10px
         img
             width: 70px
             height: 70px
@@ -32,12 +35,6 @@
         font-weight: 300
         color: #0d0d0d
         text-align: center
-    &__title
-        padding-top: 69px
-        font-size: 30px
-        line-height: 1.2
-        font-weight: 700
-        color: #0d0d0d
-        text-transform: uppercase
-    &__desription
-        padding-bottom: 81px
+        span
+            text-transform: uppercase
+            color: $base_red

@@ -1,0 +1,131 @@
+.catalog
+    &__tabs
+        width: 680px
+        list-style: none
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        margin-top: 69px
+    &__tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0 
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        font-weight: 500
+        color: #6b6b6b
+        text-transform: uppercase
+        transform: skewX(-25deg)
+        cursor: pointer
+        transition: 0.5s all
+        div
+            transform: skewX(25deg) 
+        &_active
+            background-color: $base_red
+            color: $base_white
+            border: none
+        &:hover
+            box-shadow: 3px 3px 20px $base_red
+    &__good
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+        width: 300px
+        min-height: 440px
+        border: 2px solid #e8e8e8
+        padding: 20px 20px 27px 20px
+        margin: 10px
+        overflow: hidden
+        &:nth-child(1), &:nth-child(4)
+            margin-left: 0
+        &:nth-child(3), &:nth-child(6)
+            margin-right: 0
+        img
+            min-height: 200px
+            max-width: 260px
+    &__list
+        width: 100%
+        min-height: 400px
+        padding: 0 20px
+        position: absolute
+        right: -100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        &_disabled
+            display: none
+    &__points
+        list-style: none
+    &__point
+        position: relative
+        margin-bottom: 20px
+        font-size: 14px
+        line-height: 1.2
+        font-weight: 300
+        color: #555555
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            height: 5px
+            width: 5px
+            background-color: $base_red
+            left: -10px
+            transform: translateX(-50%)
+            top: 4px
+    &__content
+        margin-top: 50px
+        display: none
+        &_active
+            display: flex
+            flex-wrap: wrap
+    &__title
+        margin-top: 20px
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 700
+        color: #0d0d0d
+    &__description
+        margin-top: 16px
+        font-size: 14px
+        line-height: 1.2
+        font-weight: 300
+        color: #0d0d0d
+        text-align: center
+    &__link
+        display: block
+        margin-top: 17px
+        font-size: 14px
+        line-height: 1.2
+        font-weight: 500
+        text-decoration: underline
+        text-transform: uppercase
+        color: $base_red
+    &__pricing
+        width: 100%
+        min-height: 61px
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        position: relative
+        margin-top: 19px
+        border-top: 1px solid #e8e8e8 
+    &__oldprice
+        position: absolute
+        top: 21px
+        font-size: 14px
+        line-height: 1.2
+        font-weight: 300
+        color: #555555
+        text-decoration: line-through
+    &__newprice
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 700
+        color: #050505
+
