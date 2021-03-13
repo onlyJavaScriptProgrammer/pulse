@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo"><img src="img/logo/logo.png" alt="logo"></a>
@@ -54,7 +55,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <div class="advantages">
         <div class="container">
             <div class="advantages__wrapper">
                 <div class="title">наши преимущества</div>
@@ -66,7 +67,7 @@
                             так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                     </div>
                     <div class="advantages__element">
-                        <img src="img/icons/heart.svg" alt="heart">
+                        <img src="img/icons/heart.svg" alt="heart" id="heartbeat">
                         <div class="advantages__element advantages__element_title">Заботимся о здоровье</div>
                         <div class="advantages__description">Мы работаем для того, 
                             чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
@@ -81,9 +82,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="consultation">
+    <div class="consultation">
         <div class="container">
             <div class="title title_consalt">Получите бесплатную консультацию <br> по подбору пульсометра</div>
             <div class="consultation__description">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
@@ -94,9 +95,9 @@
                 <button class="button button_forms">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
-    </section>
+    </div>
 
-    <section class="slider">
+    <div class="slider">
         <div class="container">
             <div class="slider__wrapper">
                 <div class="slider__content"><img src="img/other/clock.png" alt="clock"></div>
@@ -104,9 +105,9 @@
                 <div class="slider__content"><img src="img/other/t_clock.png" alt="clock"></div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="catalog">
+    <div class="catalog">
         <div class="container">
             <div class="title">Каталог пульсометров</div>
 
@@ -380,13 +381,13 @@
 
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="reviews">
+    <div class="reviews">
         <div class="container">
             <div class="title">отзывы клиентов</div>
             <div class="reviews__wrapper">
-                <div class="reviews__block">
+                <div class="reviews__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/other/first_human.png" alt="woman">
                     <div class="reviews__content">
                         <div class="reviews__title">Ирина Иванченко</div>
@@ -402,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__block reviews__block_border">
+                <div class="reviews__block reviews__block_border wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/other/second_human.png" alt="man">
                     <div class="reviews__content">
                         <div class="reviews__title">Иван Сёмочкин</div>
@@ -415,7 +416,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__block">
+                <div class="reviews__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/other/third_human.png" alt="sportsman">
                     <div class="reviews__content">
                         <div class="reviews__title">Юлия Дашкина</div>
@@ -432,10 +433,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195991!2d37.644807315901474!3d55.768394980557545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1614430998625!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195991!2d37.644807315901474!3d55.768394980557545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1614430998625!5m2!1sru!2sru" allowfullscreen=""></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
             <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -480,11 +481,15 @@
     </div>
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup"><img src="img/icons/up.svg" alt="up"></a>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
